@@ -1,4 +1,4 @@
-all : array calculator calculator2 converter flight randomcopy sciencecalc switch tree
+all : array calculator calculator2 converter flight name randomcopy sciencecalc switch tree
 
 dir :
 	mkdir -p bin
@@ -13,6 +13,8 @@ converter : dir
 	c++ -o bin/converter converter.cpp
 flight : dir
 	c++ -o bin/flight flight.cpp
+name : dir
+	c++ -o bin/name name.cpp
 randomcopy : dir
 	c++ -o bin/randomcopy randomcopy.cpp
 sciencecalc : dir
